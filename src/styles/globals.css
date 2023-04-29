@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   body {
     font-family: "Poppins";
@@ -19,7 +18,8 @@
   p,
   a,
   th,
-  td , button{
+  td,
+  button {
     font-family: "Poppins" !important;
   }
 }
@@ -184,7 +184,7 @@
     width: 0px;
   }
   .table-wrapper tr td:first-child {
-    @apply  cursor-pointer !important;
+    @apply cursor-pointer !important;
   }
   .table-wrapper tr td {
     @apply py-2 text-white border-none text-sm  px-0 font-medium;
@@ -216,6 +216,9 @@
   }
   .status img {
     @apply max-w-[16px] !important;
+  }
+  .status p {
+    @apply text-sm font-medium text-green-gradient !important;
   }
   .active-btn {
     @apply w-8 h-8 flex flex-col gap-1 cursor-pointer items-center;

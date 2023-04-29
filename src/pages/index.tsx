@@ -51,8 +51,6 @@ const poppins = Poppins({
   weight: ["400", "500", "700", "600"],
 });
 
-
-
 export default function Home() {
   const [age, setAge] = React.useState("10");
   const handleChange = (event: SelectChangeEvent) => {
@@ -185,7 +183,9 @@ export default function Home() {
                     </IconButton>
                   </Paper>
                 </Box>
-                <Link className="btn-style ms-8">Upload</Link>
+                <Box className="ms-8">
+                  <Link className="btn-style">Upload</Link>
+                </Box>
               </Box>
               <Box className="table-wrapper mt-6">
                 <TableContainer component={Paper} className="border-none">
@@ -215,9 +215,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -273,9 +271,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -331,9 +327,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -389,9 +383,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -447,9 +439,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -505,9 +495,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -563,9 +551,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -621,9 +607,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -679,9 +663,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -737,9 +719,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -795,9 +775,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -853,9 +831,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -911,9 +887,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -969,9 +943,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -1027,9 +999,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -1085,9 +1055,7 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -1143,9 +1111,231 @@ export default function Home() {
                         <TableCell>
                           <Box className="status">
                             <Image src={tick} alt="alt" />
-                            <Typography className="text-sm font-medium text-green-gradient">
-                              Ready
-                            </Typography>
+                            <Typography className="">Ready</Typography>
+                          </Box>
+                        </TableCell>
+                        <TableCell className="pe-10">
+                          <Box
+                            className="active-btn"
+                            aria-controls={openMenu ? "table-menu" : undefined}
+                            aria-haspopup="true"
+                            aria-expanded={openMenu ? "true" : undefined}
+                            onClick={handleClick}
+                          >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </Box>
+                          <div>
+                            <Menu
+                              id="table-menu"
+                              aria-labelledby="demo-positioned-button"
+                              anchorEl={anchorEl}
+                              open={openMenu}
+                              onClose={handleClose}
+                              anchorOrigin={{
+                                vertical: "bottom",
+                                horizontal: "left",
+                              }}
+                              transformOrigin={{
+                                vertical: "top",
+                                horizontal: "left",
+                              }}
+                            >
+                              <MenuItem onClick={handleClose}>
+                                <Image src={override} alt="icon" /> Download
+                              </MenuItem>
+                              <MenuItem onClick={handleClose}>
+                                <Image src={download} alt="icon" /> Override{" "}
+                              </MenuItem>
+                              <MenuItem onClick={handleClose}>
+                                <Image src={deleteIcon} alt="icon" /> Delete
+                              </MenuItem>
+                            </Menu>
+                          </div>
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="ps-6" onClick={popupClickOpen}>
+                          test-2023029.csv
+                        </TableCell>
+                        <TableCell>S3</TableCell>
+                        <TableCell>13</TableCell>
+                        <TableCell>11, 700</TableCell>
+                        <TableCell>152, 900</TableCell>
+                        <TableCell>03.29.2023 05:12 AM</TableCell>
+                        <TableCell>
+                          <Box className="status">
+                            <Image src={tick} alt="alt" />
+                            <Typography className="">Ready</Typography>
+                          </Box>
+                        </TableCell>
+                        <TableCell className="pe-10">
+                          <Box
+                            className="active-btn"
+                            aria-controls={openMenu ? "table-menu" : undefined}
+                            aria-haspopup="true"
+                            aria-expanded={openMenu ? "true" : undefined}
+                            onClick={handleClick}
+                          >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </Box>
+                          <div>
+                            <Menu
+                              id="table-menu"
+                              aria-labelledby="demo-positioned-button"
+                              anchorEl={anchorEl}
+                              open={openMenu}
+                              onClose={handleClose}
+                              anchorOrigin={{
+                                vertical: "bottom",
+                                horizontal: "left",
+                              }}
+                              transformOrigin={{
+                                vertical: "top",
+                                horizontal: "left",
+                              }}
+                            >
+                              <MenuItem onClick={handleClose}>
+                                <Image src={override} alt="icon" /> Download
+                              </MenuItem>
+                              <MenuItem onClick={handleClose}>
+                                <Image src={download} alt="icon" /> Override{" "}
+                              </MenuItem>
+                              <MenuItem onClick={handleClose}>
+                                <Image src={deleteIcon} alt="icon" /> Delete
+                              </MenuItem>
+                            </Menu>
+                          </div>
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="ps-6" onClick={popupClickOpen}>
+                          test-2023029.csv
+                        </TableCell>
+                        <TableCell>S3</TableCell>
+                        <TableCell>13</TableCell>
+                        <TableCell>11, 700</TableCell>
+                        <TableCell>152, 900</TableCell>
+                        <TableCell>03.29.2023 05:12 AM</TableCell>
+                        <TableCell>
+                          <Box className="status">
+                            <Image src={tick} alt="alt" />
+                            <Typography className="">Ready</Typography>
+                          </Box>
+                        </TableCell>
+                        <TableCell className="pe-10">
+                          <Box
+                            className="active-btn"
+                            aria-controls={openMenu ? "table-menu" : undefined}
+                            aria-haspopup="true"
+                            aria-expanded={openMenu ? "true" : undefined}
+                            onClick={handleClick}
+                          >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </Box>
+                          <div>
+                            <Menu
+                              id="table-menu"
+                              aria-labelledby="demo-positioned-button"
+                              anchorEl={anchorEl}
+                              open={openMenu}
+                              onClose={handleClose}
+                              anchorOrigin={{
+                                vertical: "bottom",
+                                horizontal: "left",
+                              }}
+                              transformOrigin={{
+                                vertical: "top",
+                                horizontal: "left",
+                              }}
+                            >
+                              <MenuItem onClick={handleClose}>
+                                <Image src={override} alt="icon" /> Download
+                              </MenuItem>
+                              <MenuItem onClick={handleClose}>
+                                <Image src={download} alt="icon" /> Override{" "}
+                              </MenuItem>
+                              <MenuItem onClick={handleClose}>
+                                <Image src={deleteIcon} alt="icon" /> Delete
+                              </MenuItem>
+                            </Menu>
+                          </div>
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="ps-6" onClick={popupClickOpen}>
+                          test-2023029.csv
+                        </TableCell>
+                        <TableCell>S3</TableCell>
+                        <TableCell>13</TableCell>
+                        <TableCell>11, 700</TableCell>
+                        <TableCell>152, 900</TableCell>
+                        <TableCell>03.29.2023 05:12 AM</TableCell>
+                        <TableCell>
+                          <Box className="status">
+                            <Image src={tick} alt="alt" />
+                            <Typography className="">Ready</Typography>
+                          </Box>
+                        </TableCell>
+                        <TableCell className="pe-10">
+                          <Box
+                            className="active-btn"
+                            aria-controls={openMenu ? "table-menu" : undefined}
+                            aria-haspopup="true"
+                            aria-expanded={openMenu ? "true" : undefined}
+                            onClick={handleClick}
+                          >
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </Box>
+                          <div>
+                            <Menu
+                              id="table-menu"
+                              aria-labelledby="demo-positioned-button"
+                              anchorEl={anchorEl}
+                              open={openMenu}
+                              onClose={handleClose}
+                              anchorOrigin={{
+                                vertical: "bottom",
+                                horizontal: "left",
+                              }}
+                              transformOrigin={{
+                                vertical: "top",
+                                horizontal: "left",
+                              }}
+                            >
+                              <MenuItem onClick={handleClose}>
+                                <Image src={override} alt="icon" /> Download
+                              </MenuItem>
+                              <MenuItem onClick={handleClose}>
+                                <Image src={download} alt="icon" /> Override{" "}
+                              </MenuItem>
+                              <MenuItem onClick={handleClose}>
+                                <Image src={deleteIcon} alt="icon" /> Delete
+                              </MenuItem>
+                            </Menu>
+                          </div>
+                        </TableCell>
+                      </TableRow>
+                      <TableRow>
+                        <TableCell className="ps-6" onClick={popupClickOpen}>
+                          test-2023029.csv
+                        </TableCell>
+                        <TableCell>S3</TableCell>
+                        <TableCell>13</TableCell>
+                        <TableCell>11, 700</TableCell>
+                        <TableCell>152, 900</TableCell>
+                        <TableCell>03.29.2023 05:12 AM</TableCell>
+                        <TableCell>
+                          <Box className="status">
+                            <Image src={tick} alt="alt" />
+                            <Typography className="">Ready</Typography>
                           </Box>
                         </TableCell>
                         <TableCell className="pe-10">
@@ -1194,7 +1384,6 @@ export default function Home() {
                 </TableContainer>
               </Box>
             </TabPanel>
-
             <TabPanel value="3" className="p-0">
               Item Three
             </TabPanel>
