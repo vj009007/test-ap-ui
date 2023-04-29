@@ -8,6 +8,7 @@ import english from "../../public/en.svg";
 import es from "../../public/es.svg";
 import dt from "../../public/dt.svg";
 import deleteIcon from "../../public/delete.svg";
+import close from "../../public/Close.svg";
 import override from "../../public/override.svg";
 import download from "../../public/download.svg";
 import TabList from "@mui/lab/TabList";
@@ -1395,20 +1396,1217 @@ export default function Home() {
       <Dialog
         open={openModel}
         onClose={popupClose}
-        aria-labelledby="alert-dialog-title"
-        aria-describedby="alert-dialog-description"
+        aria-labelledby="table-details-title"
+        aria-describedby="table-details-description"
+        className="table-details"
       >
-        <DialogTitle id="alert-dialog-title">
-          {"Use Google's location service?"}
-        </DialogTitle>
-        <DialogContent>
-          <DialogContentText id="alert-dialog-description">
-            Let Google help apps determine location. This means sending
-            anonymous location data to Google, even when no apps are running.
-          </DialogContentText>
+        <DialogTitle id="table-details-title">{"Test-2023029.csv"}</DialogTitle>
+        <DialogContent className="p-0 pb-0 mt-8">
+          <Box className="table-wrapper">
+            <TableContainer component={Paper} className="border-none">
+              <Table aria-label="customized table">
+                <TableHead>
+                  <TableRow>
+                    <TableCell className="ps-6">Name</TableCell>
+                    <TableCell>Source</TableCell>
+                    <TableCell>Columns</TableCell>
+                    <TableCell>Rows</TableCell>
+                    <TableCell>Cells</TableCell>
+                    <TableCell>Created</TableCell>
+                    <TableCell>Status</TableCell>
+                    <TableCell className="pe-6"></TableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      test-2023029.csv
+                    </TableCell>
+                    <TableCell>S3</TableCell>
+                    <TableCell>13</TableCell>
+                    <TableCell>11, 700</TableCell>
+                    <TableCell>152, 900</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>
+                      <Box className="status">
+                        <Image src={tick} alt="alt" />
+                        <Typography className="">Ready</Typography>
+                      </Box>
+                    </TableCell>
+                    <TableCell className="pe-10">
+                      <Box
+                        className="active-btn"
+                        aria-controls={openMenu ? "table-menu" : undefined}
+                        aria-haspopup="true"
+                        aria-expanded={openMenu ? "true" : undefined}
+                        onClick={handleClick}
+                      >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </Box>
+                      <div>
+                        <Menu
+                          id="table-menu"
+                          aria-labelledby="demo-positioned-button"
+                          anchorEl={anchorEl}
+                          open={openMenu}
+                          onClose={handleClose}
+                          anchorOrigin={{
+                            vertical: "bottom",
+                            horizontal: "left",
+                          }}
+                          transformOrigin={{
+                            vertical: "top",
+                            horizontal: "left",
+                          }}
+                        >
+                          <MenuItem onClick={handleClose}>
+                            <Image src={override} alt="icon" /> Download
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={download} alt="icon" /> Override{" "}
+                          </MenuItem>
+                          <MenuItem onClick={handleClose}>
+                            <Image src={deleteIcon} alt="icon" /> Delete
+                          </MenuItem>
+                        </Menu>
+                      </div>
+                    </TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </TableContainer>
+          </Box>
+          <Box className="mt-6">
+            <Link className="btn-style">Download CSV</Link>
+          </Box>
+          <Button onClick={popupClose} className="popup-close">
+            <Image src={close} alt="alt" />
+          </Button>
         </DialogContent>
-        <DialogActions>
-          <Button onClick={popupClose}>Disagree</Button>
+        <DialogActions className="p-0">
+          
         </DialogActions>
       </Dialog>
       {/* POPUP Model  */}
