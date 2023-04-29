@@ -18,7 +18,7 @@
   p,
   a,
   th,
-  td {
+  td , button{
     font-family: "Poppins" !important;
   }
 }
@@ -242,6 +242,12 @@
     transform: rotate(43.58deg);
     -webkit-transform: rotate(43.58deg);
     -moz-transform: rotate(43.58deg);
-    @apply bg-white w-[802px] h-[67.38px] absolute left-[-262px] top-[37px] z-50;
+    @apply bg-white w-[802px] h-[67.38px] absolute left-[-262px] top-[37px] z-50 !important;
+  }
+  h1 {
+    @apply text-[40px] leading-[48px] tracking-[-0.04em] text-white font-bold !important;
+  }
+  .p-0 {
+    padding: 0 !important;
   }
 }

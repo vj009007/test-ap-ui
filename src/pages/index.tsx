@@ -143,7 +143,6 @@ export default function Home() {
               <Box className="flex items-center justify-between">
                 <Typography
                   variant="h1"
-                  className="text-[40px] leading-[48px] tracking-[-0.04em] text-white font-bold"
                 >
                   Dataset
                 </Typography>
