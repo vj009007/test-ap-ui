@@ -189,6 +189,9 @@
   .table-wrapper tr td {
     @apply py-2 text-white border-none text-sm  px-0 font-medium;
   }
+  .table-details .table-wrapper tbody tr:nth-child(odd){
+    @apply bg-gradient-to-r from-[#1d1e1d] to-transparent !important;
+  }
   .table-wrapper table tbody tr:nth-child(odd) {
     background: rgba(255, 255, 255, 0.02);
   }
@@ -275,7 +278,7 @@
       rgba(255, 255, 255, 0.04) 100%
     );
     backdrop-filter: blur(84px);
-    @apply m-0 p-10 rounded-3xl shadow-none text-white relative !important;
+    @apply m-0 ps-10 pt-10 pe-10 rounded-3xl shadow-none text-white relative !important;
   }
   .table-details h2 {
     @apply text-[48px] leading-[48px] font-bold text-white tracking-[-0.04em] p-0 !important;
@@ -285,8 +288,19 @@
   }
   .table-details .table-wrapper {
     min-height: calc(100vh - 300px);
+    @apply bg-transparent !important;
   }
   .pb-0 {
     padding-bottom: 0px !important;
+  }
+  .table-details .table-wrapper tr th,
+  .table-details .table-wrapper tr{
+      @apply bg-[#131313] !important;
+  }
+  .table-details .table-wrapper tr td{
+    @apply max-w-[150px] text-ellipsis overflow-hidden whitespace-nowrap
+  }
+  .table-details .table-wrapper div{
+    @apply bg-[#131313] !important;
   }
 }
