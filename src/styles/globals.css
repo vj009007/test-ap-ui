@@ -83,7 +83,7 @@
     @apply block absolute left-[1px] right-[1px] top-[1px] bottom-[1px] z-0 rounded-xl bg-black;
   }
   ul[aria-labelledby="language"] li {
-    @apply flex items-center gap-2;
+    @apply flex items-center gap-2 overflow-hidden;
     font-family: "Poppins", sans-serif !important;
   }
   .text-green-gradient {
@@ -116,19 +116,28 @@
     );
     backdrop-filter: blur(84px);
     min-height: calc(100vh - 145px);
-    @apply rounded-2xl py-8 px-4 border-[1.5px] border-[#434343] border-solid relative z-[60];
+    @apply rounded-2xl py-8 px-4 border-[1.5px] border-[#434343] border-solid relative z-[60] !important;
   }
   .menu-list > div > div {
     @apply flex flex-col gap-5 items-start;
   }
-  .quickcheck:after {
+  .menu-list button.Mui-selected.quickcheck:after {
     background: url(/tick.svg) no-repeat center center;
+  }
+  .quickcheck:after {
+    background: url(/tick-white.svg) no-repeat center center;
+  }
+  .menu-list button.Mui-selected.dataset:after {
+    background: url(/dataset-active.svg) no-repeat center center;
   }
   .dataset:after {
     background: url(/dataset.svg) no-repeat center center;
   }
   .setting:after {
     background: url(/settings.svg) no-repeat center center;
+  }
+  .menu-list button.Mui-selected.setting:after {
+    background: url(/setting-active.svg) no-repeat center center;
   }
   .menu-list button:after {
     content: "";
@@ -173,6 +182,9 @@
   }
   ::-webkit-scrollbar {
     width: 0px;
+  }
+  .table-wrapper tr td:first-child {
+    @apply  cursor-pointer !important;
   }
   .table-wrapper tr td {
     @apply py-2 text-white border-none text-sm  px-0 font-medium;
