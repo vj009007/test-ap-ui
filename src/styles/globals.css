@@ -4,6 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   body {
     font-family: "Poppins";
@@ -121,13 +122,13 @@
     @apply flex flex-col gap-5 items-start;
   }
   .quickcheck:after {
-    background: url(../../public/tick.svg) no-repeat center center;
+    background: url(/tick.svg) no-repeat center center;
   }
   .dataset:after {
-    background: url(../../public/dataset.svg) no-repeat center center;
+    background: url(/dataset.svg) no-repeat center center;
   }
   .setting:after {
-    background: url(../../public/settings.svg) no-repeat center center;
+    background: url(/settings.svg) no-repeat center center;
   }
   .menu-list button:after {
     content: "";
