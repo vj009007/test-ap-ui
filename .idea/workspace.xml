@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16c1f4e6-9698-40e2-a5f3-47e52cad6b6d" name="Changes" comment="bg img">
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+    <list default="true" id="16c1f4e6-9698-40e2-a5f3-47e52cad6b6d" name="Changes" comment="popup added">
       <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +60,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682755929647</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="popup added">
+      <created>1682760459358</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682760459358</updated>
+    </task>
+    <task id="LOCAL-00005" summary="popup added">
+      <created>1682760464565</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682760464565</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -79,6 +92,7 @@
     <MESSAGE value="test-app" />
     <MESSAGE value="hi fixed" />
     <MESSAGE value="bg img" />
-    <option name="LAST_COMMIT_MESSAGE" value="bg img" />
+    <MESSAGE value="popup added" />
+    <option name="LAST_COMMIT_MESSAGE" value="popup added" />
   </component>
 </project>
