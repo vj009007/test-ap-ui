@@ -46,8 +46,8 @@
       #149c6b 51%,
       #baff00 100%
     );
-    background-size: 250% auto;
-    transition: 0.5s;
+    background-size: 250% auto !important;
+    transition: 0.5s !important;
   }
   .btn-style:hover {
     background-position: right center;
