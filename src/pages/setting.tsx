@@ -39,7 +39,7 @@ const Settings = () => {
       <Typography variant="h1" className="pt-1">
         Settings
       </Typography>
-      <Box className="table-wrapper mt-7">
+      <Box className="table-wrapper mt-7 setting-screen">
         <Box className="p-6">
             <Box className="flex items-start justify-between">
                 <Box className="profile-details">

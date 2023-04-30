@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16c1f4e6-9698-40e2-a5f3-47e52cad6b6d" name="Changes" comment="2nd page update">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+    <list default="true" id="16c1f4e6-9698-40e2-a5f3-47e52cad6b6d" name="Changes" comment="All file upload">
+      <change beforePath="$PROJECT_DIR$/src/pages/setting.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/setting.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1682834458868</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="All file upload">
+      <created>1682877878095</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682877878095</updated>
+    </task>
+    <task id="LOCAL-00014" summary="All file upload">
+      <created>1682878097413</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1682878097413</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,6 +162,7 @@
     <MESSAGE value="2nd page done" />
     <MESSAGE value="1st page done" />
     <MESSAGE value="2nd page update" />
-    <option name="LAST_COMMIT_MESSAGE" value="2nd page update" />
+    <MESSAGE value="All file upload" />
+    <option name="LAST_COMMIT_MESSAGE" value="All file upload" />
   </component>
 </project>
