@@ -58,7 +58,7 @@ const Settings = () => {
                         <Box className="flex items-center gap-3 mt-3">
                             <input  type="file" id="upload-button" style={{ display: "none" }}  />
                             <Button className="" ><Image src={downloadIcon} alt="Download" /> <span className="text-green-gradient">Upload new</span> </Button>
-                            <Button className="text-[#F65374]"><Image src={deleteIcon} alt="Download" /> Delete</Button>
+                            <Button><Image src={deleteIcon} alt="Download" /> <span className="text-[#F65374] underline">Delete</span> </Button>
                         </Box>
                         <Typography className="text-white text-opacity-70 formate-text">
                             Format .png or .jpg <br />

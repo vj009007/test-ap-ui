@@ -361,6 +361,9 @@
   .profile-details button{
     @apply underline text-sm leading-5 font-semibold p-0 normal-case flex items-center gap-2 !important;
   }
+  .setting-screen button{
+    @apply normal-case font-medium underline !important;
+  }
   .setting-screen button:has(.text-green-gradient){
     text-decoration-color: #3d8f17;
   }
