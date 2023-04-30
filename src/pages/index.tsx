@@ -185,7 +185,7 @@ export default function Home() {
               <Box className="flex items-center justify-between">
                 <Typography variant="h1">Dataset</Typography>
 
-                <Box className="search-wrapper w-full ps-[74px] max-w-[620px]">
+                <Box className="search-wrapper w-full ps-[74px]">
                   <Paper
                     component="form"
                     sx={{
