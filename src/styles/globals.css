@@ -19,7 +19,8 @@
   a,
   th,
   td,
-  button {
+  button,
+  input {
     font-family: "Poppins" !important;
   }
 }
@@ -189,7 +190,7 @@
   .table-wrapper tr td {
     @apply py-2 text-white border-none text-sm  px-0 font-medium;
   }
-  .table-details .table-wrapper tbody tr:nth-child(odd){
+  .table-details .table-wrapper tbody tr:nth-child(odd) {
     @apply bg-gradient-to-r from-[#1d1e1d] to-transparent !important;
   }
   .table-wrapper table tbody tr:nth-child(odd) {
@@ -294,13 +295,33 @@
     padding-bottom: 0px !important;
   }
   .table-details .table-wrapper tr th,
-  .table-details .table-wrapper tr{
-      @apply bg-[#131313] !important;
-  }
-  .table-details .table-wrapper tr td{
-    @apply max-w-[150px] text-ellipsis overflow-hidden whitespace-nowrap
-  }
-  .table-details .table-wrapper div{
+  .table-details .table-wrapper tr {
     @apply bg-[#131313] !important;
+  }
+  .table-details .table-wrapper tr td {
+    @apply max-w-[150px] text-ellipsis overflow-hidden whitespace-nowrap;
+  }
+  .table-details .table-wrapper div {
+    @apply bg-[#131313] !important;
+  }
+  p {
+    @apply text-base leading-7 text-white opacity-[.68] max-w-[880px] tracking-normal font-normal !important;
+  }
+  .input input {
+    @apply text-sm text-white opacity-40 leading-6 w-full bg-[#ffffff30] rounded-2xl p-[18px] border-none !important;
+  }
+  .address-form {
+    @apply pb-1 text-sm leading-6 text-white opacity-60 font-normal tracking-normal !important;
+  }
+  .input div:after,
+  .input div:before {
+    @apply hidden !important;
+  }
+  p.style2 {
+    @apply text-sm leading-6 text-white opacity-100 font-normal tracking-normal !important;
+  }
+  .no-result {
+    height: calc(100vh - 390px);
+    @apply pt-16 flex flex-col justify-center items-center text-center !important;
   }
 }
