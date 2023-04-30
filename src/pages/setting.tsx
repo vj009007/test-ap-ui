@@ -57,8 +57,8 @@ const Settings = () => {
                         <Typography className="user-pic">User photo</Typography>
                         <Box className="flex items-center gap-3 mt-3">
                             <input  type="file" id="upload-button" style={{ display: "none" }}  />
-                            <Button className="" ><Image src={downloadIcon} alt="Download" /> <span className="text-green-gradient font-semibold">Upload new</span> </Button>
-                            <Button><Image src={deleteIcon} alt="Download" /> <span className="text-[#F65374] underline font-semibold">Delete</span> </Button>
+                            <Button className="" ><Image src={downloadIcon} alt="Download" /> <span className="text-green-gradient font-medium">Upload new</span> </Button>
+                            <Button><Image src={deleteIcon} alt="Download" /> <span className="text-[#F65374] underline font-medium">Delete</span> </Button>
                         </Box>
                         <Typography className="text-white text-opacity-70 formate-text">
                             Format .png or .jpg <br />
@@ -80,14 +80,14 @@ const Settings = () => {
                         <Typography className="address-form">Email</Typography>
                         <Box className="w-full flex items-center gap-6">
                             <TextField  id="standard-basic" variant="standard" type="mail" className="input w-full"   value="vinocosta@gmail.com" />
-                            <Button className="underline"><span className="text-green-gradient font-semibold">Change</span></Button>
+                            <Button className="underline"><span className="text-green-gradient font-medium">Change</span></Button>
                         </Box>
                     </Box>
                     <Box className="w-full mt-6">
                         <Typography className="address-form">Password</Typography>
                         <Box className="w-full flex items-center gap-6">
                             <TextField  id="standard-basic" variant="standard" type="password"  className="input w-full"   value="***************************" />
-                            <Button className="underline"><span className="text-green-gradient font-semibold">Change</span></Button>
+                            <Button className="underline"><span className="text-green-gradient font-medium">Change</span></Button>
                         </Box>
                     </Box>
                 </form>
