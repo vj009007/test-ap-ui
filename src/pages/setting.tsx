@@ -8,30 +8,30 @@ import { useState } from "react";
 const Settings = () => {
 
 
-    const [image, setImage] = useState({ preview: "", raw: "" });
+//     const [image, setImage] = useState({ preview: "", raw: "" });
 
-  const handleChange = e => {
-    if (e.target.files.length) {
-      setImage({
-        preview: URL.createObjectURL(e.target.files[0]),
-        raw: e.target.files[0]
-      });
-    }
-  };
+//   const handleChange = e => {
+//     if (e.target.files.length) {
+//       setImage({
+//         preview: URL.createObjectURL(e.target.files[0]),
+//         raw: e.target.files[0]
+//       });
+//     }
+//   };
 
-  const handleUpload = async e => {
-    e.preventDefault();
-    const formData = new FormData();
-    formData.append("image", image.raw);
+//   const handleUpload = async e => {
+//     e.preventDefault();
+//     const formData = new FormData();
+//     formData.append("image", image.raw);
 
-    await fetch("YOUR_URL", {
-      method: "POST",
-      headers: {
-        "Content-Type": "multipart/form-data"
-      },
-      body: formData
-    });
-  };
+//     await fetch("YOUR_URL", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "multipart/form-data"
+//       },
+//       body: formData
+//     });
+//   };
 
   
   return (
@@ -43,21 +43,22 @@ const Settings = () => {
         <Box className="p-6">
             <Box className="flex items-start justify-between">
                 <Box className="profile-details">
-                    <label htmlFor="upload-button"> {image.preview ? (
+                  <Image src={ProfilePic} alt="profile pic" className="rounded-full min-w-[100px] max-w-[100px] min-h-[100px]" />
+                    {/* <label htmlFor="upload-button"> {image.preview ? (
                         <img src={image.preview} alt="dummy" width="300" height="300" className="rounded-full min-w-[100px] max-w-[100px] min-h-[100px]" />
                         ) : (
                         <>
                             <Image src={ProfilePic} alt="profile pic" className="rounded-full min-w-[100px] max-w-[100px] min-h-[100px]" />
                         </>
                         )}
-                     </label>
+                     </label> */}
                     
                     <Box>
                         <Typography className="user-pic">User photo</Typography>
                         <Box className="flex items-center gap-3 mt-3">
-                            <input  type="file" id="upload-button" style={{ display: "none" }} onChange={handleChange} />
-                            <Button className="" onClick={handleUpload}><Image src={downloadIcon} alt="Download" /> <span className="text-green-gradient">Upload new</span> </Button>
-                            <Button className="text-[#F65374]" onClick={handleUpload}><Image src={deleteIcon} alt="Download" /> Delete</Button>
+                            <input  type="file" id="upload-button" style={{ display: "none" }}  />
+                            <Button className="" ><Image src={downloadIcon} alt="Download" /> <span className="text-green-gradient">Upload new</span> </Button>
+                            <Button className="text-[#F65374]"><Image src={deleteIcon} alt="Download" /> Delete</Button>
                         </Box>
                         <Typography className="text-white text-opacity-70 formate-text">
                             Format .png or .jpg <br />
