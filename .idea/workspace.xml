@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16c1f4e6-9698-40e2-a5f3-47e52cad6b6d" name="Changes" comment="2nd page done" />
+    <list default="true" id="16c1f4e6-9698-40e2-a5f3-47e52cad6b6d" name="Changes" comment="2nd page update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/globals.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +104,28 @@
       <option name="project" value="LOCAL" />
       <updated>1682776231370</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="1st page done">
+      <created>1682834254224</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682834254224</updated>
+    </task>
+    <task id="LOCAL-00011" summary="1st page done">
+      <created>1682834260094</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1682834260094</updated>
+    </task>
+    <task id="LOCAL-00012" summary="2nd page update">
+      <created>1682834458868</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682834458868</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +147,8 @@
     <MESSAGE value="sattus" />
     <MESSAGE value="popup" />
     <MESSAGE value="2nd page done" />
-    <option name="LAST_COMMIT_MESSAGE" value="2nd page done" />
+    <MESSAGE value="1st page done" />
+    <MESSAGE value="2nd page update" />
+    <option name="LAST_COMMIT_MESSAGE" value="2nd page update" />
   </component>
 </project>
