@@ -86,8 +86,14 @@
     @apply block absolute left-[1px] right-[1px] top-[1px] bottom-[1px] z-0 rounded-xl bg-black;
   }
   ul[aria-labelledby="language"] li {
-    @apply flex items-center gap-2 rounded-r-xl;
+    @apply flex items-center gap-2;
     font-family: "Poppins", sans-serif !important;
+  }
+  ul[aria-labelledby="language"] li:nth-child(1){
+    border-top-right-radius: 12px;
+  }
+  ul[aria-labelledby="language"] li:last-child{
+    border-bottom-right-radius: 12px;
   }
   .text-green-gradient {
     background: linear-gradient(97.43deg, #baff00 -6.54%, #149c6b 142.22%);
@@ -200,8 +206,8 @@
   .table-wrapper tr td {
     @apply py-2 text-white border-none text-sm  px-0 font-medium;
   }
-  .table-details .table-wrapper tbody tr:nth-child(odd) {
-    @apply bg-gradient-to-r from-[#1d1e1d] to-transparent !important;
+  .table-details .table-wrapper tr{
+    @apply bg-transparent;
   }
   .table-wrapper table tbody tr:nth-child(odd) {
     background: rgba(255, 255, 255, 0.02);
@@ -242,6 +248,7 @@
     @apply text-sm font-medium text-green-gradient !important;
   }
   .active-btn {
+    transition: all .3s ease;
     @apply w-full min-w-[2rem] h-9 flex flex-col gap-1 justify-center cursor-pointer items-center  bg-transparent;
   }
   .active-btn span {
@@ -282,7 +289,7 @@
     transform: rotate(43.58deg);
     -webkit-transform: rotate(43.58deg);
     -moz-transform: rotate(43.58deg);
-    @apply bg-white w-[802px] h-[67.38px] absolute left-[-262px] top-[37px] z-50 !important;
+    @apply bg-white w-[802px] h-[67.38px] absolute left-[-262px] top-[37px] z-50 pointer-events-none !important;
   }
   h1 {
     @apply text-[40px] leading-[48px] tracking-[-0.04em] text-white font-bold !important;
@@ -318,8 +325,7 @@
   .pb-0 {
     padding-bottom: 0px !important;
   }
-  .table-details .table-wrapper tr th,
-  .table-details .table-wrapper tr {
+  .table-details .table-wrapper tr th{
     @apply bg-[#131313] !important;
   }
   .table-details .table-wrapper tr td {
