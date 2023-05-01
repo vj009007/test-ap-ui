@@ -382,4 +382,7 @@
   .setting-screen button:hover{
     @apply bg-transparent !important
   }
+  .table-details .popup-close:hover{
+    @apply bg-transparent !important;
+  }
 }
