@@ -102,7 +102,7 @@
   }
 
   .gradientBg {
-    @apply bg-gradient-to-r from-[#ffffff] to-[#000000];
+    @apply bg-gradient-to-r from-[#ffffff] to-[#00000001];
   }
   div#table-menu ul,
   .gradeint-border {
