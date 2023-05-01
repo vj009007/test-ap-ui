@@ -2,6 +2,7 @@ import { Typography, Box, Link, Button, TextField } from "@mui/material";
 import ProfilePic from "../../public/profile-pic.svg";
 import downloadIcon from "../../public/download-2.svg";
 import deleteIcon from "../../public/delete-color.svg";
+import copyIcon from "../../public/copy-icon.svg";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -34,7 +35,7 @@ const Settings = () => {
 //   };
 
   
-  return (
+return (
     <>
       <Typography variant="h1" className="pt-1">
         Settings
@@ -74,7 +75,10 @@ const Settings = () => {
                 <form action="#" className="form">
                     <Box className="w-full">
                         <Typography className="address-form">API key</Typography>
-                        <TextField  id="standard-basic" variant="standard"  className="input w-full input-copy"   value="AIzaSyB_о6aE0W-cKjzpXHSxolDoxh0L9kgil-I" />
+                        <Box className="relative input-copy">
+                            <TextField  id="standard-basic" variant="standard"  className="input w-full"   value="AIzaSyB_о6aE0W-cKjzpXHSxolDoxh0L9kgil-I" />
+                            <Button><Image src={copyIcon} alt="Copy Icon" /></Button>
+                        </Box>
                     </Box>
                     <Box className="w-full mt-6">
                         <Typography className="address-form">Email</Typography>

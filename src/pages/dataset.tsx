@@ -150,6 +150,118 @@ const Dataset = () => {
                   </div>
                 </TableCell>
               </TableRow>
+              <TableRow>
+                <TableCell className="ps-6" onClick={popupClickOpen}>
+                  test-2023029.csv
+                </TableCell>
+                <TableCell>S3</TableCell>
+                <TableCell>13</TableCell>
+                <TableCell>11, 700</TableCell>
+                <TableCell>152, 900</TableCell>
+                <TableCell>03.29.2023 05:12 AM</TableCell>
+                <TableCell>
+                  <Box className="status">
+                    <Image src={tick} alt="alt" />
+                    <Typography className="">Ready</Typography>
+                  </Box>
+                </TableCell>
+                <TableCell className="pe-10">
+                  <Box
+                    className="active-btn"
+                    aria-controls={openMenu ? "table-menu" : undefined}
+                    aria-haspopup="true"
+                    aria-expanded={openMenu ? "true" : undefined}
+                    onClick={handleClick}
+                  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </Box>
+                  <div>
+                    <Menu
+                      id="table-menu"
+                      aria-labelledby="demo-positioned-button"
+                      anchorEl={anchorEl}
+                      open={openMenu}
+                      onClose={handleClose}
+                      anchorOrigin={{
+                        vertical: "bottom",
+                        horizontal: "left",
+                      }}
+                      transformOrigin={{
+                        vertical: "top",
+                        horizontal: "left",
+                      }}
+                    >
+                      <MenuItem onClick={handleClose}>
+                        <Image src={override} alt="icon" /> Download
+                      </MenuItem>
+                      <MenuItem onClick={handleClose}>
+                        <Image src={download} alt="icon" /> Override{" "}
+                      </MenuItem>
+                      <MenuItem onClick={handleClose}>
+                        <Image src={deleteIcon} alt="icon" /> Delete
+                      </MenuItem>
+                    </Menu>
+                  </div>
+                </TableCell>
+              </TableRow>
+              <TableRow>
+                <TableCell className="ps-6" onClick={popupClickOpen}>
+                  test-2023029.csv
+                </TableCell>
+                <TableCell>S3</TableCell>
+                <TableCell>13</TableCell>
+                <TableCell>11, 700</TableCell>
+                <TableCell>152, 900</TableCell>
+                <TableCell>03.29.2023 05:12 AM</TableCell>
+                <TableCell>
+                  <Box className="status">
+                    <Image src={tick} alt="alt" />
+                    <Typography className="">Ready</Typography>
+                  </Box>
+                </TableCell>
+                <TableCell className="pe-10">
+                  <Box
+                    className="active-btn"
+                    aria-controls={openMenu ? "table-menu" : undefined}
+                    aria-haspopup="true"
+                    aria-expanded={openMenu ? "true" : undefined}
+                    onClick={handleClick}
+                  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </Box>
+                  <div>
+                    <Menu
+                      id="table-menu"
+                      aria-labelledby="demo-positioned-button"
+                      anchorEl={anchorEl}
+                      open={openMenu}
+                      onClose={handleClose}
+                      anchorOrigin={{
+                        vertical: "bottom",
+                        horizontal: "left",
+                      }}
+                      transformOrigin={{
+                        vertical: "top",
+                        horizontal: "left",
+                      }}
+                    >
+                      <MenuItem onClick={handleClose}>
+                        <Image src={override} alt="icon" /> Download
+                      </MenuItem>
+                      <MenuItem onClick={handleClose}>
+                        <Image src={download} alt="icon" /> Override{" "}
+                      </MenuItem>
+                      <MenuItem onClick={handleClose}>
+                        <Image src={deleteIcon} alt="icon" /> Delete
+                      </MenuItem>
+                    </Menu>
+                  </div>
+                </TableCell>
+              </TableRow>
             </TableBody>
           </Table>
         </TableContainer>
@@ -181,6 +293,30 @@ const Dataset = () => {
                   </TableRow>
                 </TableHead>
                 <TableBody>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      0
+                    </TableCell>
+                    <TableCell>93,2%</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>Siswadesu#89...</TableCell>
+                    <TableCell>LuckySo886206</TableCell>
+                    <TableCell>siswadesu@g...</TableCell>
+                    <TableCell>0.005090907304</TableCell>
+                    <TableCell>98</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="ps-6" onClick={popupClickOpen}>
+                      0
+                    </TableCell>
+                    <TableCell>93,2%</TableCell>
+                    <TableCell>03.29.2023 05:12 AM</TableCell>
+                    <TableCell>Siswadesu#89...</TableCell>
+                    <TableCell>LuckySo886206</TableCell>
+                    <TableCell>siswadesu@g...</TableCell>
+                    <TableCell>0.005090907304</TableCell>
+                    <TableCell>98</TableCell>
+                  </TableRow>
                   <TableRow>
                     <TableCell className="ps-6" onClick={popupClickOpen}>
                       0

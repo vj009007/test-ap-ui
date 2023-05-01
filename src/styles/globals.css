@@ -370,10 +370,8 @@
   .formate-text{
     @apply text-sm leading-5 font-normal mt-2  !important;
   }
-  .input-copy{
-    background: url(/copy-icon.svg) no-repeat center center;
-    background-position: 97% center;
-    background-size: 24px;
+  .input-copy button{
+    @apply absolute right-0 top-2 w-5 h-10 cursor-pointer p-0
   }
   .setting-screen button:hover{
     @apply bg-transparent !important
