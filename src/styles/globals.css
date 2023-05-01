@@ -304,11 +304,7 @@
   .table-details div[aria-labelledby="table-details-title"] {
     min-width: calc(100vw - 200px);
     min-height: calc(100vh - 60px);
-    background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.08) 0%,
-      rgba(255, 255, 255, 0.04) 100%
-    );
+    background-color: #131313 !important;
     backdrop-filter: blur(84px);
     @apply m-0 ps-10 pt-10 pe-10 rounded-3xl shadow-none border-[1.5px] border-[#434343] border-solid text-white relative !important;
   }
@@ -332,7 +328,7 @@
     @apply max-w-[150px] text-ellipsis overflow-hidden whitespace-nowrap;
   }
   .table-details .table-wrapper > div {
-    @apply bg-[#131313] !important;
+    @apply bg-[#131313] shadow-none rounded-tr-none rounded-br-none !important;
   }
   p {
     @apply text-base leading-7 tracking-normal font-normal !important;
