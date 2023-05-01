@@ -168,13 +168,7 @@
   .menu-list button {
     @apply p-0 rounded-lg text-[#7e7e7e] text-base font-medium normal-case no-underline px-[15px] w-full flex items-start gap-3 pl-11;
   }
-  .menu-list button:hover:not(.Mui-selected) {
-    background: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.04) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-  }
+
   .menu-list span.MuiTabs-indicator {
     @apply hidden !important;
   }
