@@ -1,7 +1,19 @@
-import { Box, Link, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
+  Link,
+  Typography,
+} from "@mui/material";
 import { signIn } from "next-auth/react";
 import Image from "next/image";
 import googleIcon from "../../public/google-icon.svg";
+import close from "../../public/Close.svg";
+import React from "react";
 
 const LoginPage = () => {
   const handleSubmit = async (event:any) => {
@@ -15,11 +27,21 @@ const LoginPage = () => {
       password,
     });
 
-    // if (result.error) {
-    //   console.error(result.error);
-    // } else {
-    //   window.location.href = "/dashboard";
-    // }
+//     if (result.error) {
+//       console.error(result.error);
+//     } else {
+//       window.location.href = "/dashboard";
+//     }
+//   };
+  //POPUP Model
+  const [open, setOpen] = React.useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
   };
 
   return (
@@ -37,10 +59,15 @@ const LoginPage = () => {
           />
           <br />
           <label htmlFor="password">Password</label>
-          <input id="password" type="password" required />
+          <input id="password" type="password" className="error" required />
           <br />
-          <Box className="text-right">
-            <Link href="#" className="sign-link text-right">
+          <Box className="text-right flex items-center justify-between">
+            <Typography className="error-text">Incorrect value</Typography>
+            <Link
+              href="#"
+              className="sign-link text-right"
+              onClick={handleClickOpen}
+            >
               Forgot password
             </Link>
           </Box>
@@ -59,6 +86,34 @@ const LoginPage = () => {
           </Box>
         </form>
       </div>
+      {/* POPUP Model */}
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="signup-popup"
+        aria-describedby="alert-dialog-description"
+        className="sign-popup w-full"
+      >
+        <DialogTitle id="signup-popup">{"Forgot password?"}</DialogTitle>
+        <DialogContent className="sign-screens px-0 pb-8">
+          <form action="#">
+            <label htmlFor="email">Write your email:</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="vinoCosta@gmail.com"
+              required
+            />
+            <button type="submit" className="btn-style mt-8">
+              Sign in
+            </button>
+          </form>
+        </DialogContent>
+        <Button onClick={handleClose} className="popup-close">
+          <Image src={close} alt="alt" />
+        </Button>
+      </Dialog>
+      {/* POPUP Model */}
     </div>
   );
 };

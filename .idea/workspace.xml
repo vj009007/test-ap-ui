@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="16c1f4e6-9698-40e2-a5f3-47e52cad6b6d" name="Changes" comment="signup setting">
-      <change beforePath="$PROJECT_DIR$/src/pages/api/auth/[...nextauth].js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/api/auth/[...nextauth].js" afterDir="false" />
+    <list default="true" id="16c1f4e6-9698-40e2-a5f3-47e52cad6b6d" name="Changes" comment="remove amazon">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/signin.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/signin.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/signup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/signup.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +32,21 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="test-app" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="test-app" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -277,8 +294,32 @@
       <option name="project" value="LOCAL" />
       <updated>1684822897158</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="signup setting">
+      <created>1684823006848</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1684823006848</updated>
+    </task>
+    <task id="LOCAL-00036" summary="signup setting">
+      <created>1684823130331</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1684823130331</updated>
+    </task>
+    <task id="LOCAL-00037" summary="remove amazon">
+      <created>1684823289597</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1684823289597</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.tsx" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -307,6 +348,7 @@
     <MESSAGE value="btn hover" />
     <MESSAGE value="signup page" />
     <MESSAGE value="signup setting" />
-    <option name="LAST_COMMIT_MESSAGE" value="signup setting" />
+    <MESSAGE value="remove amazon" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove amazon" />
   </component>
 </project>

@@ -89,10 +89,10 @@
     @apply flex items-center gap-2;
     font-family: "Poppins", sans-serif !important;
   }
-  ul[aria-labelledby="language"] li:nth-child(1){
+  ul[aria-labelledby="language"] li:nth-child(1) {
     border-top-right-radius: 12px;
   }
-  ul[aria-labelledby="language"] li:last-child{
+  ul[aria-labelledby="language"] li:last-child {
     border-bottom-right-radius: 12px;
   }
   .text-green-gradient {
@@ -200,7 +200,7 @@
   .table-wrapper tr td {
     @apply py-2 text-white border-none text-sm  px-0 font-medium;
   }
-  .table-details .table-wrapper tr{
+  .table-details .table-wrapper tr {
     @apply bg-transparent;
   }
   .table-wrapper table tbody tr:nth-child(odd) {
@@ -234,15 +234,15 @@
   .status img {
     @apply max-w-[16px] !important;
   }
-  .table-details .table-wrapper tr td{
-    font-family: 'Montserrat' !important;
+  .table-details .table-wrapper tr td {
+    font-family: "Montserrat" !important;
   }
   .status p {
-    font-family: 'Montserrat' !important;
+    font-family: "Montserrat" !important;
     @apply text-sm font-medium text-green-gradient !important;
   }
   .active-btn {
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     @apply w-full min-w-[2rem] h-9 flex flex-col gap-1 justify-center cursor-pointer items-center  bg-transparent;
   }
   .active-btn span {
@@ -315,7 +315,7 @@
   .pb-0 {
     padding-bottom: 0px !important;
   }
-  .table-details .table-wrapper tr th{
+  .table-details .table-wrapper tr th {
     @apply bg-[#131313] !important;
   }
   .table-details .table-wrapper tr td {
@@ -344,35 +344,35 @@
     height: calc(100vh - 390px);
     @apply pt-16 flex flex-col justify-center items-center text-center !important;
   }
-  .logout{
+  .logout {
     @apply text-sm leading-5 font-medium text-white text-opacity-70 underline !important;
   }
-  .profile-details{
+  .profile-details {
     @apply flex items-center gap-6;
   }
-  .profile-details .user-pic{
-    font-family: 'Montserrat' !important;
+  .profile-details .user-pic {
+    font-family: "Montserrat" !important;
     @apply text-base font-semibold text-white !important;
   }
-  .profile-details button{
+  .profile-details button {
     @apply underline text-sm leading-5 font-semibold p-0 normal-case flex items-center gap-2 !important;
   }
-  .setting-screen button{
+  .setting-screen button {
     @apply normal-case font-medium underline !important;
   }
-  .setting-screen button:has(.text-green-gradient){
+  .setting-screen button:has(.text-green-gradient) {
     text-decoration-color: #3d8f17;
   }
-  .formate-text{
+  .formate-text {
     @apply text-sm leading-5 font-normal mt-2  !important;
   }
-  .input-copy button{
-    @apply absolute right-0 top-2 w-5 h-10 cursor-pointer p-0
+  .input-copy button {
+    @apply absolute right-0 top-2 w-5 h-10 cursor-pointer p-0;
   }
-  .setting-screen button:hover{
-    @apply bg-transparent !important
+  .setting-screen button:hover {
+    @apply bg-transparent !important;
   }
-  .table-details .popup-close:hover{
+  .table-details .popup-close:hover {
     @apply bg-transparent !important;
   }
   .signup-wrapper {
@@ -386,18 +386,18 @@
     );
     @apply max-w-[403px] w-full p-8 rounded-2xl border-[1.5px] border-[#434343] border-solid !important;
   }
-  .signup-wrapper form{
+  .sign-screens form{
     @apply mt-6;
   }
-  .signup-wrapper label {
+  .sign-screens label {
     @apply block mb-1 text-white text-opacity-60 text-sm leading-6 font-normal;
   }
-  .signup-wrapper input {
+  .sign-screens input {
     background: rgba(255, 255, 255, 0.08);
-    @apply w-full rounded-2xl p-4 text-sm font-normal leading-6 border-[1px] border-[#434343] border-solid;
+    @apply w-full rounded-2xl p-4 text-sm font-normal leading-6 border-[1px] border-[#434343] border-solid text-white !important;
   }
-  .signup-wrapper input:focus,
-  .signup-wrapper input:focus-visible{
+  .sign-screens input:focus,
+  .sign-screens input:focus-visible{
       @apply border-[1px] border-[#434343] border-solid outline-none !important;
   }
   body:has(.signup-wrapper){
@@ -417,5 +417,30 @@
   }
   .signup-wrapper p{
     @apply text-center p-0 text-[12px] leading-4 font-normal text-white opacity-60 !important;
+  }
+  .sign-popup> div.MuiModal-backdrop{
+    @apply bg-black opacity-80 !important;
+  }
+  .sign-popup div[aria-labelledby="signup-popup"]{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
+    @apply rounded-2xl px-8 pt-8 pb-0 m-0 max-w-[475px] w-full border-[1.5px] border-[#434343] border-solid backdrop-blur-[84px] !important;
+  }
+  .sign-popup div[aria-labelledby="signup-popup"] h2{
+    @apply p-0 text-white text-2xl font-bold leading-8 tracking-[-0.04em]  !important;
+  }
+  .sign-popup .popup-close{
+    @apply absolute right-8 top-8 p-0 min-w-0 !important;
+  }
+  .sign-screens ::placeholder{
+    @apply text-white opacity-60;
+  }
+  .sign-screens input.error{
+    @apply   border-[1.5px] border-[#FF6696] border-solid !important;
+  }
+  .sign-screens .error-text{
+    @apply   text-[#FF6696] text-[12px] leading-4 font-medium opacity-100 !important;
+  }
+  .sign-screens form:has(.error) .btn-style{
+    @apply opacity-20;
   }
 }

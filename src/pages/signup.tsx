@@ -1,4 +1,8 @@
 import { useState } from "react";
+import Image from "next/image";
+import googleIcon from "../../public/google-icon.svg";
+import { Typography, Box } from "@mui/material";
+import Link from "next/link";
 
 const SignUpPage = () => {
   const [message, setMessage] = useState("");
@@ -27,7 +31,7 @@ const SignUpPage = () => {
 
   return (
     <div className="signup-wrapper">
-      <div className="signup sign-screens"> 
+      <div className="signup sign-screens">
         <h1>Sign Up</h1>
         {message && <p>{message}</p>}
         <form onSubmit={handleSubmit}>
@@ -35,9 +39,25 @@ const SignUpPage = () => {
           <input id="email" type="email" className="mb-4" required />
           <br />
           <label htmlFor="password">Password</label>
+          <input id="password" type="password" className="mb-4" required />
+          <br />
+          <label htmlFor="password">Confirm password</label>
           <input id="password" type="password" required />
           <br />
-          <button type="submit">Sign up</button>
+          <button type="submit" className="btn-style mt-8 w-full">
+            Sign up
+          </button>
+
+          <button className="google-btn">
+            <Image src={googleIcon} alt="Google Icon" /> <span>Use Google</span>
+          </button>
+          <hr />
+          <Typography>Have an account?</Typography>
+          <Box className="text-center mt-2">
+            <Link href="#" className="sign-link text-right">
+              Sign in
+            </Link>
+          </Box>
         </form>
       </div>
     </div>
