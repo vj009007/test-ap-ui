@@ -375,4 +375,47 @@
   .table-details .popup-close:hover{
     @apply bg-transparent !important;
   }
+  .signup-wrapper {
+    @apply h-[100vh] w-[100vw] flex items-center justify-center !important;
+  }
+  .signup-wrapper .sign-screens {
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0.04) 100%
+    );
+    @apply max-w-[403px] w-full p-8 rounded-2xl border-[1.5px] border-[#434343] border-solid !important;
+  }
+  .signup-wrapper form{
+    @apply mt-6;
+  }
+  .signup-wrapper label {
+    @apply block mb-1 text-white text-opacity-60 text-sm leading-6 font-normal;
+  }
+  .signup-wrapper input {
+    background: rgba(255, 255, 255, 0.08);
+    @apply w-full rounded-2xl p-4 text-sm font-normal leading-6 border-[1px] border-[#434343] border-solid;
+  }
+  .signup-wrapper input:focus,
+  .signup-wrapper input:focus-visible{
+      @apply border-[1px] border-[#434343] border-solid outline-none !important;
+  }
+  body:has(.signup-wrapper){
+    @apply p-0;
+  }
+  .signup-wrapper .sign-link{
+    @apply text-green-gradient text-[12px] font-semibold !important;
+  }
+  .google-btn{
+    @apply p-0 opacity-100 flex items-center gap-3 justify-center text-center w-full mt-6;
+  }
+  .google-btn span{
+    @apply text-white text-opacity-60 font-normal  text-sm;
+  }
+  .signup-wrapper hr{
+    @apply my-6 border-t-[1.5px] border-[#434343] border-solid w-full !important;
+  }
+  .signup-wrapper p{
+    @apply text-center p-0 text-[12px] leading-4 font-normal text-white opacity-60 !important;
+  }
 }
