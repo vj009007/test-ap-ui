@@ -16,7 +16,7 @@ import close from "../../public/Close.svg";
 import React from "react";
 
 const LoginPage = () => {
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event:any) => {
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;
