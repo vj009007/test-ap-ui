@@ -1,6 +1,6 @@
 import NextAuth from "next-auth";
-import Providers from "next-auth/providers";
-import { AmazonCognitoIdentityProvider } from "@next-auth/amazon-cognito-identity-provider";
+// import Providers from "next-auth/providers";
+// import { AmazonCognitoIdentityProvider } from "@next-auth/amazon-cognito-identity-provider";
 
 export default NextAuth({
   providers: [
