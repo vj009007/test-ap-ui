@@ -69,7 +69,7 @@ export default function Home() {
                   <Image src={esIcon} alt="english" /> ES
                 </MenuItem>
                 <MenuItem value={dtIcon}>
-                  <Image src={dtIcon} alt="english" /> DT
+                  <Image src={dtIcon} alt="english" /> Rizwan
                 </MenuItem>
               </Select>
             </FormControl>
