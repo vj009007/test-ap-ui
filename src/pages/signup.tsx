@@ -3,7 +3,7 @@ import { useState } from "react";
 const SignUpPage = () => {
   const [message, setMessage] = useState("");
 
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event:any) => {
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;

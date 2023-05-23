@@ -4,7 +4,7 @@ import Image from "next/image";
 import googleIcon from "../../public/google-icon.svg";
 
 const LoginPage = () => {
-  const handleSubmit = async (event) => {
+  const handleSubmit = async (event:any) => {
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;
@@ -15,11 +15,11 @@ const LoginPage = () => {
       password,
     });
 
-    if (result.error) {
-      console.error(result.error);
-    } else {
-      window.location.href = "/dashboard";
-    }
+    // if (result.error) {
+    //   console.error(result.error);
+    // } else {
+    //   window.location.href = "/dashboard";
+    // }
   };
 
   return (
