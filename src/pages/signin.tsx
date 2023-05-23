@@ -16,7 +16,7 @@ import close from "../../public/Close.svg";
 import React from "react";
 
 const LoginPage = () => {
-  const handleSubmit = async (event:any) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;
@@ -32,7 +32,7 @@ const LoginPage = () => {
 //     } else {
 //       window.location.href = "/dashboard";
 //     }
-//   };
+  };
   //POPUP Model
   const [open, setOpen] = React.useState(false);
 
